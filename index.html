@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Official information about the owner-operated 3XMR Homelab Drive Backups OAuth application.">
+  <title>3XMR Homelab Drive Backups — OAuth Application</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="canonical" href="https://drive-oauth.3xmr.com/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><nav class="wrap nav" aria-label="Main navigation">
+  <a class="brand" href="./">3XMR <span>Drive Backups</span></a>
+  <div class="nav-links"><a href="./">Home</a><a href="./privacy.html">Privacy policy</a><a href="./terms.html">Terms</a></div>
+</nav></header>
+<main class="wrap" id="main">
+  <p class="eyebrow">Private operator utility · Google Drive OAuth</p>
+  <h1>Secure, owner-controlled backup access.</h1>
+  <p class="lead">3XMR Homelab Drive Backups is a private utility that helps its operator use <a href="https://rclone.org/">rclone</a> to store and verify selected infrastructure backup archives in Google Drive and retrieve them for authorized recovery.</p>
+  <section class="panel" aria-labelledby="what">
+    <h2 id="what">What this application does</h2>
+    <p>After the operator explicitly authorizes Google access, the local backup utility can use the granted Drive permissions to upload, list, verify, and download designated backup objects. The operator controls the selected accounts, storage destinations, permissions, retention, and restore procedures.</p>
+    <p>Backup archives must be encrypted client-side before this new connection is activated for production. Google Drive remains the chosen off-site storage provider. No backup archives or access tokens are served from this public website.</p>
+  </section>
+  <div class="grid">
+    <section class="tile"><h3>Limited access</h3><p>Google OAuth permission is requested for backup and recovery functions only, under an explicitly authorized account.</p></section>
+    <section class="tile"><h3>Operator controlled</h3><p>This is not a public backup service. There are no customer accounts, public backup endpoints, or self-service registrations.</p></section>
+    <section class="tile"><h3>Transparency</h3><p>Learn how Google user data is handled, retained, and revoked in the <a href="./privacy.html">privacy policy</a>.</p></section>
+  </div>
+  <section class="prose" aria-labelledby="access"><h2 id="access">Access and support</h2>
+    <p>Only the authorized operator may connect Google accounts. You can review or revoke a grant at <a href="https://myaccount.google.com/connections">Google Account connections</a>. For questions about this application, contact <a href="mailto:wrightpt@gmail.com">wrightpt@gmail.com</a>.</p>
+    <p class="muted">This static informational website does not request Google account credentials, run a sign-in form, or perform backups itself.</p>
+  </section>
+</main>
+<footer class="site-foot"><div class="wrap"><span>© 2026 3XMR Homelab Drive Backups</span><span><a href="./privacy.html">Privacy</a> · <a href="./terms.html">Terms</a></span></div></footer>
+</body>
+</html>
