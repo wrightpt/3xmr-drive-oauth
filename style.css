@@ -1,0 +1,34 @@
+:root{color-scheme:light;--ink:#172c39;--muted:#526674;--edge:#dce6e9;--bg:#f4f8f8;--accent:#087768;--accent-dk:#06574c}
+*{box-sizing:border-box}
+html{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.65}
+body{margin:0;background:var(--bg);color:var(--ink)}
+a{color:var(--accent-dk);text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:3px solid #b0cbed;outline-offset:4px}
+.skip{position:absolute;left:-10000px;top:auto}
+.skip:focus{left:1rem;top:1rem;background:white;padding:.5rem;z-index:2}
+.site-head{background:#fff;border-bottom:1px solid var(--edge)}
+.wrap{width:min(100% - 2.5rem,900px);margin-inline:auto}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;padding:1.1rem 0}
+.brand{font-size:1.05rem;font-weight:800;letter-spacing:-.02em;text-decoration:none;color:var(--ink)}
+.brand span{color:var(--accent)}
+.nav-links{display:flex;gap:1.2rem;flex-wrap:wrap;font-size:.9rem}
+main{padding:2.8rem 0 4rem}
+.eyebrow{text-transform:uppercase;letter-spacing:.09em;font-size:.8rem;color:var(--accent-dk);font-weight:700}
+h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;letter-spacing:-.035em;margin:.6rem 0 1rem}
+h2{font-size:1.35rem;line-height:1.35;margin:2rem 0 .75rem;letter-spacing:-.018em}
+h3{font-size:1.06rem;margin:1rem 0 .35rem}
+.lead{font-size:1.16rem;max-width:68ch;color:var(--muted)}
+.panel{background:#fff;border:1px solid var(--edge);border-radius:16px;padding:1.65rem;margin:1.8rem 0;box-shadow:0 10px 35px rgba(12,42,53,.035)}
+.panel h2:first-child{margin-top:0}
+.bullets li{margin:.6rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:1rem}
+.tile{background:#fff;border:1px solid var(--edge);border-radius:14px;padding:1.25rem}
+.tile h3{margin-top:0}
+.muted,small{color:var(--muted)}
+.prose p,.prose ul,.prose ol{max-width:75ch}
+.prose ul,.prose ol{padding-left:1.5rem}
+.prose li{margin:.45rem 0}
+.site-foot{border-top:1px solid var(--edge);background:#fff;padding:1.7rem 0;color:var(--muted);font-size:.9rem}
+.site-foot .wrap{display:flex;gap:1rem;justify-content:space-between;flex-wrap:wrap}
+@media(max-width:520px){main{padding-top:2rem}.panel{padding:1.1rem}.nav{align-items:flex-start;flex-direction:column}}
