@@ -64,6 +64,8 @@ def check() -> None:
                     assert u.netloc, f"{filename}: malformed external URL"
                 continue
             assert not u.scheme and not u.netloc, f"{filename}: unexpected URL scheme"
+            if u.path in ("", ".", "./", "/"):
+                continue
             path = (ROOT / u.path).resolve()
             assert path.is_relative_to(ROOT), f"{filename}: path escaped site root"
             assert path.name in LOCAL and path.is_file(), f"{filename}: missing target {href}"
